@@ -1,4 +1,17 @@
 [
   "obsidian-git",
-  "obsidian-admonition"
+  "obsidian-admonition",
+  "dataview",
+  "obsidian-discordrpc",
+  "mermaid-tools",
+  "quickadd",
+  "table-editor-obsidian",
+  "cmdr",
+  "quick-latex",
+  "obsidian-to-anki-plugin",
+  "drawio-obsidian",
+  "obsidian-plantuml",
+  "obsidian-reading-time",
+  "copilot",
+  "execute-code"
 ]
