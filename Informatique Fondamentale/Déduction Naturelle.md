@@ -26,8 +26,14 @@ title: Exemple
 color: 180, 180, 180
 
 - $x \land y, z \vdash y \land z$
-	#TODO 
- 
+	$\begin{align}\\
+		& 1. x \land y \sep prem.\\
+		& 2. z \space\space\space\tab\sep prem.\\
+		& 3. y \space\space\tab\sep \land_{e_2},1\\
+		& 4. y \land z \sep \land_{i},2-3\\
+	\end{align}$ 
+$\space$
+
 - $(x \land y) \land z, t \land h \vdash y \land t$
 	#TODO 
 
