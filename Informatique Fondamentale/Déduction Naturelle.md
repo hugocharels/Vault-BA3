@@ -19,9 +19,7 @@ _Si j’ai une preuve de $\phi\land\psi$ alors j’ai une preuve de $\phi$ et de
 
 ```
 
-```ad-example
-title: Exemple
-color: 180, 180, 180
+```ad-exemple
 
 - $x \land y, z \vdash y \land z$
 	$\begin{align}\\
@@ -58,22 +56,19 @@ $$
 ```ad-rule
 title: Règle d’élimination
 
-#TODO better
 $$
-\psi_{1} \text{hyp.} \quad \psi_{2} \text{hyp.}
-$$
-$$
-\vdots\quad\vdots
+\sep\psi_{1} \quad \text{hyp.} \sep \psi_{2} \quad \text{ hyp.}
 $$
 $$
-\frac{\psi_{1}\lor\psi_{2}\quad\phi\text{fin hyp.}\quad\phi\text{fin hyp.}}{\phi} \lor_{e}
+\vdots \sep\sep\tab \vdots
+$$
+$$
+\frac{\psi_{1}\lor\psi_{2}\quad\phi\text{ fin hyp.}\quad\phi\text{ fin hyp.}}{\phi} \lor_{e}
 $$
 
 ```
 
-```ad-example
-title: Exemple
-color: 180, 180, 180
+```ad-exemple
 #TODO 
 ```
 
@@ -81,13 +76,11 @@ color: 180, 180, 180
 
 ```ad-rule
 title: Règle de L’introduction
-
-#TODO better
 $$
 \phi \quad \text{hyp.}
 $$
 $$
-\vdots
+\vdots\sep
 $$
 $$
 \frac{\psi \quad \text{fin hyp.}}{\phi\rightarrow\psi}\rightarrow_{i}
@@ -106,9 +99,7 @@ $\rightarrow_{MP}$ _ est parfois noté _ $\rightarrow_{e}$
 
 ```
 
-```ad-example
-title: Exemple
-color: 180, 180, 180
+```ad-exemple
 
 - $x, x\rightarrow y, x\rightarrow (y\rightarrow z) \vdash z$
 #TODO 
@@ -144,9 +135,7 @@ $$
 
 ```
 
-```ad-example
-title: Exemple
-color: 180, 180, 180
+```ad-exemple
 #TODO 
 ```
 
@@ -161,9 +150,7 @@ $$
 
 ```
 
-```ad-example
-title: Exemple
-color: 180, 180, 180
+```ad-exemple
 #TODO 
 ```
 
@@ -189,9 +176,7 @@ _Si j’ai une preuve de $\lnot\lnot\phi$ alors j’ai aussi une preuve de $\phi
 
 ```
 
-```ad-example
-title: Exemple
-color: 180, 180, 180
+```ad-exemple
 
 #TODO 
 
@@ -216,9 +201,7 @@ $$
 
 ```
 
-```ad-example
-title: Exemple
-color: 180, 180, 180
+```ad-exemple
 #TODO 
 ```
 
@@ -242,8 +225,6 @@ _Si j’ai une preuve de $\phi\rightarrow\psi$ et une preuve de $\lnot\psi$ alor
 
 ```
 
-```ad-example
-title: Exemple
-color: 180, 180, 180
+```ad-exemple
 #TODO 
 ```
