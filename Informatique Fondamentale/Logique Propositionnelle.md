@@ -1,12 +1,7 @@
 ## Formalisation logique
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
-
+```ad-definition
 $q$ est une **conséquence logique** de $p$ est noté $p \models q$
-
-
 ```
 
 ## Construction de formules
@@ -41,10 +36,7 @@ $x \implies y \land z \implies t \equiv x \implies ((y \land z) \implies t)$
 
 ## La sémantique
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
-
+```ad-definition
 La valeur de vérité d’une formule propositionnelle $\phi$ formée à partir des propositions d’un ensemble $X$, évaluée avec la fonction d’interprétation $V$, est notée $[[\phi]]_{V}$. En particulier, on a $[[\phi]]_{V} \in \{0, 1\}$.
 La fonction $[[\phi]]_{V}$ est définie par induction sur la syntaxe de $\phi$ de la façon suivante :
 - $[[\top]]_{V} = 1; \quad [[\bot]]_{V} = 0; \quad [[x]]_{V} = V(x)$
@@ -70,49 +62,38 @@ Pour $V_{1}(x)=0$
 
 ## Validité et Satisfiabilité
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
+```ad-definition
 
 Une formule propositionnelle $\phi$ est **satisfaisable** si et seulement si il existe une fonctionne d’interprétation $V$ pour les propositions de $\phi$, telle que $V \models \phi$.
 
 ```
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
+```ad-definition
 
 Une formule propositionnelle $\phi$ est **valide** si et seulement si pour toute fonction d’interprétation $V$ pour les propositions de $\phi$, on a $V \models \phi$.
 
 ```
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
+```ad-definition
 
 Soit $\phi_{1}, \dots, \phi_{n}, \phi$ des formules. On dira que $\phi$ est une conséquence logique de $\phi_{1}, \dots, \phi_{n} \models \phi$, si $(\phi_{1} \land \dots \land \phi_{n}) \implies \phi$ est valide.
 
 ```
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
+```ad-definition
 
 Deux formules $\phi$ et $\psi$ sont dites équivalentes si la formule $\phi \iff \psi$ est valide. On notera $\phi \equiv \psi$ pour signifier que $\phi$ et $\psi$ sont équivalentes.
 
 ```
 
-```ad-tldr
+```ad-theorem
 title: Théorème d’incomplétude de Gödel
-color: 255,255,100
 
 Une formule propositionnelle $\phi$ est valide si et seulement si sa négation $\lnot \phi$ n’est pas satisfaisable.
 
 ```
 
-```ad-example
-title: Démonstration
-color: 130,130,255
+```ad-demonstration
 
 Nous devons démontrer une équivalence. On peut donc supposer ce qui est à gauche de l’équivalence et en déduire ce qui est à droite, et réciproquement.
 - Supposons que $\phi$ est valide. Alors pour tout interprétation $V$, on a $V \models \phi$. Donc $V \not\models \lnot \phi$. Comme pour toute interprétation quelconque $V$, cela signifie que $\lnot \phi$ n’est pas satisfaisable.
@@ -124,9 +105,7 @@ Nous devons démontrer une équivalence. On peut donc supposer ce qui est à gau
 
 ## Tableaux sémantiques
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
+```ad-definition
 
 Un **littéral** est une proposition $x$ ou la négation d’une proposition $\lnot x$.
 

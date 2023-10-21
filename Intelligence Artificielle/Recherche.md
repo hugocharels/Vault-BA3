@@ -1,8 +1,6 @@
 ![[Pasted image 20230926101617.png]]
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
+```ad-definition
 
 Un problème de recherche est composé de :
 - Un état d’espace « state space » : $S$
@@ -14,9 +12,7 @@ Un problème de recherche est composé de :
 
 ```
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
+```ad-definition
 
 Un état d’espace est composé de :
 - L’état du monde « world state » : tout les éléments de l’environnement

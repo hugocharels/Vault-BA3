@@ -1,5 +1,58 @@
 {
-  "userAdmonitions": {},
+  "userAdmonitions": {
+    "rule": {
+      "type": "rule",
+      "color": "130, 130, 255",
+      "icon": {
+        "name": "book",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Règle",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": false
+    },
+    "definition": {
+      "type": "definition",
+      "color": "255, 100, 100",
+      "icon": {
+        "name": "book",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Définition",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "theorem": {
+      "type": "theorem",
+      "color": "255, 255, 100",
+      "icon": {
+        "name": "book",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Théorème",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "demonstration": {
+      "type": "demonstration",
+      "color": "130, 130, 255",
+      "icon": {
+        "name": "list-ol",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Démonstration",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    }
+  },
   "syntaxHighlight": false,
   "copyButton": false,
   "version": "10.1.1",

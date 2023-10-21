@@ -1,8 +1,7 @@
 ## La conjonction $(\land)$
 
-```ad-tldr
+```ad-rule
 title: Règle d’introduction
-color: 130,130,255
 $$
 \frac{\phi\quad\psi}{\phi\land\psi} \land_{i}
 $$
@@ -10,9 +9,8 @@ _Si j’ai une preuve de $\phi$ et une preuve de $\psi$ alors j’ai une preuve 
 
 ```
 
-```ad-tldr
+```ad-rule
 title: Règle d’élimination
-color: 130,130,255
 $$
 \frac{\phi\land\psi}{\phi}\land_{e_{1}} \quad \frac{\phi\land\psi}{\psi}\land_{e_{2}}
 $$
@@ -35,15 +33,21 @@ color: 180, 180, 180
 $\space$
 
 - $(x \land y) \land z, t \land h \vdash y \land t$
-	#TODO 
+	$\begin{align}\\
+		& 1. (x \land y) \land z \sep prem.\\
+		& 2. t \land h \space\space\sep\sep prem.\\
+		& 3. x \land y \sep\sep \land_{e_1},1\\
+		& 4. y \space\space\space\tab\sep\sep \land_{e_2},3\\
+		& 5. t \space\space\space\tab\sep\sep \land_{e_1},2\\
+		& 6. y \land t \space\sep\sep \land_{i},4-5\\
+	\end{align}$
 
 ```
 
 ## La disjonction $(\lor)$
 
-```ad-tldr
+```ad-rule
 title: Règle d’introduction
-color: 130,130,255
 
 $$
 \frac{\phi}{\phi\lor\psi}\lor_{i_{1}} \quad \frac{\psi}{\phi\lor\psi}\lor_{i_{2}}
@@ -51,9 +55,8 @@ $$
 
 ```
 
-```ad-tldr
+```ad-rule
 title: Règle d’élimination
-color: 130,130,255
 
 #TODO better
 $$
@@ -74,11 +77,11 @@ color: 180, 180, 180
 #TODO 
 ```
 
-## L’implication $(\implies)$
+## L’implication $(\rightarrow)$
 
-```ad-tldr
+```ad-rule
 title: Règle de L’introduction
-color: 130,130,255
+
 #TODO better
 $$
 \phi \quad \text{hyp.}
@@ -87,20 +90,19 @@ $$
 \vdots
 $$
 $$
-\frac{\psi \quad \text{fin hyp.}}{\phi\implies\psi}\implies_{i}
+\frac{\psi \quad \text{fin hyp.}}{\phi\rightarrow\psi}\rightarrow_{i}
 $$
 ```
 
-```ad-tldr
+```ad-rule
 title: Règle d’élimination (Modus Ponens)
-color: 130,130,255
 $$
-\frac{\phi\quad\phi\implies\psi}{\psi}\implies_{MP}
+\frac{\phi\quad\phi\rightarrow\psi}{\psi}\rightarrow_{MP}
 $$
 
-_Si j’ai une preuve de $\phi$ et une preuve de $\phi\implies\psi$ alors j’ai une preuve de $\psi$_
+_Si j’ai une preuve de $\phi$ et une preuve de $\phi\rightarrow\psi$ alors j’ai une preuve de $\psi$_
 
-$\implies_{MP}$ _ est parfois noté _ $\implies_{e}$
+$\rightarrow_{MP}$ _ est parfois noté _ $\rightarrow_{e}$
 
 ```
 
@@ -108,19 +110,18 @@ $\implies_{MP}$ _ est parfois noté _ $\implies_{e}$
 title: Exemple
 color: 180, 180, 180
 
-- $x, x\implies y, x\implies (y\implies z) \vdash z$
+- $x, x\rightarrow y, x\rightarrow (y\rightarrow z) \vdash z$
 #TODO 
 
-- $x\implies(y\implies z), x, \lnot z, \vdash \lnot y$
+- $x\rightarrow(y\rightarrow z), x, \lnot z, \vdash \lnot y$
 #TODO
 
 ```
 
 ## La négation $(\lnot)$
 
-```ad-tldr
+```ad-rule
 title: Règle d’introduction
-color: 130,130,255
 
 $$
 \phi\quad\text{hyp.}
@@ -134,9 +135,8 @@ $$
 
 ```
 
-```ad-tldr
+```ad-rule
 title: Règle d’élimination
-color: 130,130,255
 
 $$
 \frac{\phi\quad\lnot\phi}{\bot}\lnot_{e}
@@ -152,9 +152,8 @@ color: 180, 180, 180
 
 ## Le faux $(\bot)$
 
-```ad-tldr
+```ad-rule
 title: Règle d’élimination
-color: 130,130,255
 
 $$
 \frac{\bot}{\phi}\bot_{e}
@@ -170,9 +169,8 @@ color: 180, 180, 180
 
 ## La double négation $(\lnot\lnot)$
 
-```ad-tldr
+```ad-rule
 title: Règle d’introduction
-color: 130,130,255
 $$
 \frac{\phi}{\lnot\lnot\phi}\lnot\lnot i
 $$
@@ -181,9 +179,8 @@ _Si j’ai une preuve de $\phi$ alors j’ai aussi une preuve de non non $\phi$_
 
 ```
 
-```ad-tldr
+```ad-rule
 title: Règle d’élimination
-color: 130,130,255
 $$
 \frac{\lnot\lnot\phi}{\phi}\lnot\lnot e
 $$
@@ -200,23 +197,21 @@ color: 180, 180, 180
 
 ```
 
-## Le si et seulement si $(\iff)$
+## Le si et seulement si $(\leftrightarrow)$
 
-```ad-tldr
+```ad-rule
 title: Règle d’introduction
-color: 130,130,255
 $$
-\frac{\phi_{1}\implies\phi_{2}\quad\phi_{2}\implies\phi_{1}}{\phi_{1}\iff\phi_{2}}\iff_{i}
+\frac{\phi_{1}\rightarrow\phi_{2}\quad\phi_{2}\rightarrow\phi_{1}}{\phi_{1}\leftrightarrow\phi_{2}}\leftrightarrow_{i}
 $$
 
 ```
 
-```ad-tldr
+```ad-rule
 title: Règle d’élimination
-color: 130,130,255
 $$
-\frac{\phi_{1}\iff\phi_{2}}{\phi_{1}\implies\phi_{2}}\iff_{e_{1}}\quad
-\frac{\phi_{1}\iff\phi_{2}}{\phi_{2}\implies\phi_{1}}\iff_{e_{2}}
+\frac{\phi_{1}\leftrightarrow\phi_{2}}{\phi_{1}\rightarrow\phi_{2}}\leftrightarrow_{e_{1}}\quad
+\frac{\phi_{1}\leftrightarrow\phi_{2}}{\phi_{2}\rightarrow\phi_{1}}\leftrightarrow_{e_{2}}
 $$
 
 ```
@@ -229,23 +224,21 @@ color: 180, 180, 180
 
 ## Règles dérivées
 
-```ad-tldr
+```ad-rule
 title: Règle d’introduction du LEM
-color: 130,130,255
 $$
 \frac{}{\phi\lor\lnot\phi} LEM
 $$
 
 ```
 
-```ad-tldr
+```ad-rule
 title: Règle de contraposition (Modus Tollens)
-color: 130,130,255
 $$
-\frac{\phi\implies\psi\quad\lnot\psi}{\lnot\phi}MT
+\frac{\phi\rightarrow\psi\quad\lnot\psi}{\lnot\phi}MT
 $$
 
-_Si j’ai une preuve de $\phi\implies\psi$ et une preuve de $\lnot\psi$ alors je peut en déduire $\lnot\phi$_
+_Si j’ai une preuve de $\phi\rightarrow\psi$ et une preuve de $\lnot\psi$ alors je peut en déduire $\lnot\phi$_
 
 ```
 

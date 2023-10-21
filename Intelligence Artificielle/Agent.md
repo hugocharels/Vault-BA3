@@ -1,7 +1,5 @@
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
+```ad-definition
 
 Un **agent** est une entité qui **perçoit** et **agis**. Il est **rationnel** si il choisit l'action qui maximize l'utilitée attendue.
 Un **agent** perçoit sont **environnement** à travers les **capteurs** _(sensors)_ et agis grâce aux **actionneurs** _(actuators)_.
@@ -12,9 +10,7 @@ Un **agent** perçoit sont **environnement** à travers les **capteurs** _(senso
 
 ## Fonction d'agent
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
+```ad-definition
 
 La **fonction d'agent** attribue une action en fonction de ce que l'agent perçoit. $f : P^{*} \rightarrow A$
 
@@ -22,9 +18,7 @@ La **fonction d'agent** attribue une action en fonction de ce que l'agent perço
 
 ## Programme d'agent
 
-```ad-tldr
-title: Définition
-color: 255, 100, 100
+```ad-definition
 
 Le **programme d'agent** $l$ s'exécute sur une machine $M$ et implémente $f$ :$f = Agent(l,M)$. 
 _$f$ dépend de $M$ et $l$_
