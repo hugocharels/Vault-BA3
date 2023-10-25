@@ -51,8 +51,31 @@ Tout ensemble non-vide de clauses $A=\{C_{1},\dots,C_{n}\}$ est équivalent à l
 
 ```
 
+## Solveur
 
+```ad-definition
 
+Un **SAT Solveur** prends en **entrée** un ensemble de clause $S$. Et donne **en sortie** la formule $V$ qui satisfait $S$ si $S$ est **satisfaisable**. $V \vDash S$
 
+```
 
+## Modélisation
+
+### Problème de coloration de graphes
 #TODO 
+
+### Problème des 8 reines
+#TODO 
+
+### Problème de pavage
+#TODO 
+
+### Problème du sudoku
+#TODO 
+
+## Transformation de Tseitin
+#TODO 
+
+## Variantes de SAT
+#TODO 
+
