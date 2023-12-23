@@ -27,8 +27,13 @@ _$f$ dépend de $M$ et $l$_
 
 ## Rationalité
 
-#TODO
+```ad-definition
 
+La **rationalité** peut être définie comme la capacité d'un agent à prendre des décisions logiques et efficaces dans le but d'atteindre ses objectifs. Contrairement à l'omniscience, les agents rationnels ne possèdent pas une connaissance totale, mais sont plutôt limités par les perceptions disponibles. Ils ne sont pas clairvoyants, ce qui signifie qu'ils peuvent manquer de connaissances sur la dynamique de l'environnement.
+
+Les agents rationnels explorent et apprennent, particulièrement dans des environnements inconnus, afin d'améliorer leur performance. Bien que les agents rationnels ne commettent pas d'erreurs intrinsèques, leurs actions peuvent néanmoins être infructueuses. En outre, la rationalité implique une autonomie croissante à mesure que les agents apprennent, ce qui signifie qu'ils transcendent progressivement leur programme initial pour baser davantage leur comportement sur leur propre expérience.
+
+```
 
 ## Environnement de Tâche - PEAS
 
@@ -49,7 +54,13 @@ _$f$ dépend de $M$ et $l$_
 
 ## Design de l'agent
 
-#TODO
+- **Partiellement observable:** l'agent a besoin de mémoire.
+- **Stochastique:** l'agent peut être amené à se préparer à des éventualités.
+- **Multi-agent**: l'agent peut être amené à se comporter de manière aléatoire.
+- **Système statique:** l'agent a le temps de prendre une décision rationnelle.
+- **Temps continu:** contrôleur à fonctionnement continu
+- **Physique inconnue**: besoin d'exploration.
+- **Performance measure inconnue:** observer/interagir avec le principal humain
 
 ## Types d'agents
 
