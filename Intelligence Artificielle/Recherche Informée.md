@@ -55,7 +55,7 @@ En d'autres termes, une heuristique admissible ne surestime jamais le coût pour
 
 ```ad-definition
 
-La **consistance** d'une heuristique repose sur l'idée principale que les coûts heuristiques estimés doivent être inférieurs ou égaux aux coûts réels. Pour être considérée comme consistante, une heuristique doit satisfaire l'admissibilité et 'heuristique doit également satisfaire la consistance, ce qui se traduit par la `triangle inequality` (inégalité triangulaire). Pour chaque arc entre deux nœuds $A$ et $C$, l'heuristique pour $A$ moins l'heuristique pour $C$ doit être inférieure ou égale au coût réel de cet arc.
+La **consistance** d'une heuristique repose sur l'idée principale que les coûts heuristiques estimés doivent être inférieurs ou égaux aux coûts réels. Pour être considérée comme consistante, une heuristique doit satisfaire l'admissibilité et l'heuristique doit également satisfaire la consistance, ce qui se traduit par la `triangle inequality` (inégalité triangulaire). Pour chaque arc entre deux nœuds $A$ et $C$, l'heuristique pour $A$ moins l'heuristique pour $C$ doit être inférieure ou égale au coût réel de cet arc.
 Formellement : $h(A)-h(C) \leq c(A, C)$ ou $h(A) \leq c(A, C) + h(C)$
 
 La recherche de graphe avec A* est optimale si l'heuristique est consistante.
