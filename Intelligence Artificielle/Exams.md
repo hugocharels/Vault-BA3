@@ -49,3 +49,23 @@ Formellement, l'admissibilité est définie comme suit : $0\leq h(n) \leq h^*(n)
 
 # 5. Jeux et recherche adversariale
 
+# 7. Probabilités
+
+![[Pasted image 20231227092651.png]]
+![[Pasted image 20231227092613.png]]
+
+
+
+# 8. Bayes Network
+
+![[Pasted image 20231227092740.png]]
+
+# 10. Yo
+
+![[Pasted image 20231227093144.png]]
+
+![[Pasted image 20231227093937.png]]
+
+
+
+
